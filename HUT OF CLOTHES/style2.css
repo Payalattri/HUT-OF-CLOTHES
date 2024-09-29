@@ -1,0 +1,158 @@
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+.container{
+width: 100%;
+height: 100vh;
+background-color: black;
+
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dbd8d8;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: #0f0e0e;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1f1d1d;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: #342f2f;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+  
+}
+.images img{
+
+  width: 100%;
+  height: auto;
+}
+
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ff6347;
+}
+
+.footer-column p, 
+.footer-column ul, 
+.footer-column a {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a:hover {
+  color: #ff6347;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #bbb;
+}
+
